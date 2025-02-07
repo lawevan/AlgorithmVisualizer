@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#button-container {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    margin-top: 20px; /* Add spacing above */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: aqua;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+#array-container {
+    display: flex;
+    align-items: flex-end;
+    gap: 2px;
+    height: 200px; /* Max height to keep bars proportional */
+    margin-top: 20px;
+}
+
+.bar {
+    width: 40px;
+    background-color: blue;
+    transition: height 0.3s ease-in-out;
+    display: flex; /* Enables flexbox */
+    align-items: center; /* Centers vertically */
+    justify-content: center; /* Centers horizontally */
+    color: white; /* Makes the number visible */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
