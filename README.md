@@ -7,4 +7,4 @@ The project has three files:
 - **style.css** – Visual styles.
 - **script.js** – Core algorithm logic and visualiza
 
-This project is licensed under the GNU Affero General Public License v3.0. The full license text may be included in a LICENSE file or appended to this README.
+This project is licensed under the GNU Affero General Public License v3.0. The full license text is included in the LICENSE file of this repository.
