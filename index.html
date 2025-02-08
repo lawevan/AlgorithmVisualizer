@@ -11,7 +11,23 @@
 </head>
 <body>
     <h1>Algorithm Visualizer</h1>
-    <div id="button-container"></div>
+
+    <div class="form-group">
+        <!-- Clear, descriptive label for accessibility -->
+        <label for="arraySizeInput" class="input-label">
+          Array Size <span class="input-range">(1–50)</span>
+        </label>
+
+        <div id="input-container">
+          <!-- The input element with a helpful placeholder -->
+          <input type="number" id="arraySizeInput" placeholder="Enter size here" min="1" max="50" class="styled-input">
+          <button id="generateArrayBtn" class="styled-button">Generate Array</button>
+        </div>
+        <small class="input-helper">Default array size is 10</small>
+    </div>
+
+    <h5>Choose an algorithm to visualize:</h5>
+    <div id="algo-button-container"></div>
 
 </body>
 </html>

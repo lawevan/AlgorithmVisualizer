@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +7,9 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    background-color: #2E2E2E;
+    color: #E0E0E0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,21 +17,112 @@ body {
     height: 100vh;
 }
 
-#button-container {
-    display: flex;
-    gap: 10px; /* Space between buttons */
-    margin-top: 20px; /* Add spacing above */
+h1 {
+    margin-bottom: 20px;
 }
 
-button {
+/* Grouping label and input for cohesive styling */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+
+/* Styling the label to stand out */
+.input-label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Styling the label to stand out */
+#input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    /* margin-bottom: 20px;  */
+}
+
+/* Input styling */
+.styled-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    width: 150px; /* Adjust width as needed */
+}
+
+.styled-input:focus {
+    border-color: #66afe9;
+    outline: none;
+}
+
+
+/* Button styling */
+.styled-button {
+    background-color: #00CED1;
+    color: #2E2E2E;
     padding: 10px 20px;
-    background-color: aqua;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
+.styled-button:hover {
+    background-color: #0056b3;
+}
+
+.styled-button:active {
+    transform: scale(0.98);
+}
+
+/* Style for the disabled state */
+.styled-button:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+}
+
+.input-helper {
+    font-size: 12px;
+    color: #777;
+    margin-top: 4px;
+}
+  
+
+#algo-button-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between buttons */
+    margin-top: 20px; /* Add spacing above */
+}
+#algo-button-container button {
+    padding: 10px 20px;
+    background-color: #007BFF; /* Primary color */
+    color: #FFFFFF; /* High contrast text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Hover state to provide feedback */
+#algo-button-container button:hover {
+    background-color: #0056b3; /* Darker shade for hover */
+}
+
+/* Active state for additional interactivity */
+#algo-button-container button:active {
+    transform: scale(0.98); /* Slightly reduce size on click */
+}
 
 #array-container {
     display: flex;
@@ -35,17 +130,21 @@ button {
     gap: 2px;
     height: 200px; /* Max height to keep bars proportional */
     margin-top: 20px;
+    /* background-color: white; */
 }
 
 .bar {
+    height: 100px;
     width: 40px;
-    background-color: blue;
-    transition: height 0.3s ease-in-out;
-    display: flex; /* Enables flexbox */
-    align-items: center; /* Centers vertically */
-    justify-content: center; /* Centers horizontally */
-    color: white; /* Makes the number visible */
+    background-color: #FF5722;
+    transition: height 1s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     font-weight: bold;
 }
+
+
