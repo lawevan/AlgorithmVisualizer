@@ -129,7 +129,7 @@ h1 {
     align-items: flex-end;
     gap: 2px;
     height: 200px; /* Max height to keep bars proportional */
-    margin-top: 20px;
+    margin-top: 50px;
     /* background-color: white; */
 }
 
